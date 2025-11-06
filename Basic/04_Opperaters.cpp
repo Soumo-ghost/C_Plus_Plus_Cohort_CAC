@@ -4,31 +4,31 @@ using namespace std;
 int main(){
 // //----Arthematic Operater
 // //+/-/*///%
-// int teaCups;
-// float cupsPrice;
-// cout<<"Howmany Teacups do you need";
-// cin>>teaCups;
-// cout<<"Per Tea Cups Price ";
-// cin>>cupsPrice;
-// float totalPrice=teaCups*cupsPrice;
-// if(totalPrice>100){
-//     totalPrice=totalPrice-(totalPrice*0.05);
-//     cout<<"you are given a 5 persent discount New Total is"<<totalPrice;
+int teaCups;
+float cupsPrice;
+cout<<"Howmany Teacups do you need";
+cin>>teaCups;
+cout<<"Per Tea Cups Price ";
+cin>>cupsPrice;
+float totalPrice=teaCups*cupsPrice;
+if(totalPrice>100){
+    totalPrice=totalPrice-(totalPrice*0.05);
+    cout<<"you are given a 5 persent discount New Total is"<<totalPrice;
 
-// }
-// else{
-// cout<<"your total Price is "<<totalPrice;
-// }
-// //-----Assignment Opertaors-----
-// int teaBags;
-// cout<<"how many Tea Bags do you need";
-// cin>>teaBags;
-// if(teaBags<10){
-//     teaBags=teaBags+5;
-//     cout<<"total Tea Bags is"<<teaBags;
-// }else{
-//     cout<<"your total Tea Bags "<<teaBags;
-// }
+}
+else{
+cout<<"your total Price is "<<totalPrice;
+}
+//-----Assignment Opertaors-----
+int teaBags;
+cout<<"how many Tea Bags do you need";
+cin>>teaBags;
+if(teaBags<10){
+    teaBags=teaBags+5;
+    cout<<"total Tea Bags is"<<teaBags;
+}else{
+    cout<<"your total Tea Bags "<<teaBags;
+}
 //----Relation Operators---------
 int customerTea;
 string rank;
@@ -42,5 +42,22 @@ rank="Gold";
 rank="Normal";
 }
 cout<<"your Tea Rank is "<<rank;
+//-----Logical Operaters-------
+int cupcount;
+string Status;
+float cupprice=2.99;
+float Price;
+cout<<"Enter Cupcount"<<endl;
+cin>>cupcount;
+cout<<"Are You Student is yes write student";
+cin>>Status;
+Price=cupcount*cupprice;
+if(cupcount>15||Status=="student"){
+    Price=Price-(Price*0.10);
+    cout<<"Your Effective Price after dis is"<<Price;
+}else{
+    cout<<"Your Effective Price is "<<Price;
+}
+//Bitwise Operater is For later
 return 0;
 }
