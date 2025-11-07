@@ -19,7 +19,23 @@ if(time>8&&time<18){
 }else{
     cout<<"nikal lamda dukan bandh hai";
 }
-
+//-----Nested If--------
+int cups;
+float price;
+cout<<"Enter no of cups you have";
+cin>>cups;
+price=cups*1.99;
+if(cups>20){
+    cout<<"tou get 20% discount";
+price=price-(price*0.2);
+cout<<"price="<<price;
+}else if(cups>10){
+    cout<<"tou get 10% discount";
+price=price-(price*0.1);
+cout<<"price="<<price;
+}else{
+cout<<"price="<<price;
+}
 
     return 0;
 
