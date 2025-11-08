@@ -36,7 +36,36 @@ cout<<"price="<<price;
 }else{
 cout<<"price="<<price;
 }
-
+//------Switch Case---------
+double price;
+int choise;
+cout<<"select a tea";
+cout<<"1: Green Tea";
+cout<<"2: Lemon Tea";
+cout<<"3: Ulong Tea";
+cout<<"4: Darjiling Tea";
+cout<<"Enter Choise no";
+cin>>choise;
+switch(choise){
+    case 1:
+        price=2.0;
+        cout<<price<<"Green tea"<<endl;
+        break;
+    case 2:
+        price=3.5;
+        cout<<price<<"Lemon"<<endl;
+        break;
+    case 3:
+        price=3.5;
+        cout<<price<<"Ulong"<<endl;
+        break;
+    case 4:
+        price=5.5;
+        cout<<price<<"Darjiling"<<endl;
+        break;
+    default:
+        cout<<"bc thik se ppar"<<endl;
+}
     return 0;
 
 }
