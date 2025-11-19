@@ -14,3 +14,4 @@ int main(){
     return 0;
     // 0 means succefully exited after running 
 }
+//just a code
