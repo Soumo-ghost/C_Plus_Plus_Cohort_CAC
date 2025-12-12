@@ -21,20 +21,20 @@ if(time>8&&time<18){
 }
 //-----Nested If--------
 int cups;
-float price;
+float Amount;
 cout<<"Enter no of cups you have";
 cin>>cups;
-price=cups*1.99;
+Amount=cups*1.99;
 if(cups>20){
     cout<<"tou get 20% discount";
-price=price-(price*0.2);
-cout<<"price="<<price;
+Amount=Amount-(Amount*0.2);
+cout<<"price="<<Amount;
 }else if(cups>10){
     cout<<"tou get 10% discount";
-price=price-(price*0.1);
-cout<<"price="<<price;
+Amount=Amount-(Amount*0.1);
+cout<<"price="<<Amount;
 }else{
-cout<<"price="<<price;
+cout<<"price="<<Amount;
 }
 //------Switch Case---------
 double price;
@@ -64,7 +64,7 @@ switch(choise){
         cout<<price<<"Darjiling"<<endl;
         break;
     default:
-        cout<<"bc thik se ppar"<<endl;
+        cout<<"bc thik se par"<<endl;
 }
     return 0;
 
