@@ -15,14 +15,17 @@ int* prepareChaiOrders(int cups){
 int main(){
 
 //cpp can not give array by dafault ---
-//but can be a work around to give by memory addresss  aka Pointer
+//but can be a w ork around to give by memory addresss  aka Pointer
 //Pointer hold The memory location
 //Pointer has (* &)----
 //* is data type 
 // & is Memory Adress
 int cups=5;
-prepareChaiOrders(cups);
- //------------------------incomplete--------------------
+int* chaiOrder =prepareChaiOrders(cups);
+for (int i = 0; i < cups; i++){
+    cout<<"Cups"<<i+1<<"Has"<<chaiOrder[i]<<" ml\n";
+}
+delete[] chaiOrder;
 
     return 0;
 }
