@@ -39,4 +39,5 @@
 !*.cpp
 !*.hpp
 !*.h
+!*.md
 !Makefile
