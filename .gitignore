@@ -31,3 +31,12 @@
 *.exe
 *.out
 *.app
+# Ignore everything
+*
+# But do not ignore directories
+!*/
+# Do not ignore source files
+!*.cpp
+!*.hpp
+!*.h
+!Makefile
