@@ -6,8 +6,8 @@ public:
 string teaName;
 int sreving;
 vector<string> ing;
-//default constructer
-Chai(){
+//parameter constructer constructer
+Chai(string name, int serve, vector<string> ing){
     cout<<"constuctor calle";
 teaName="not tea";
 sreving=2;
@@ -27,8 +27,8 @@ void displaychai(){
 
 };
 int main(){
-Chai defaultChai;
-defaultChai.displaychai();
+Chai lemontea("lemontea",2,{"watter, ","lemon","honey"});
+lemontea.displaychai();
 
 
 
